@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 1em 0;
+}
+
+main {
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+#timer {
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+#controls {
+    margin: 1em 0;
+}
+
+#controls button {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-size: 1em;
+}
+
+#settings-button {
+    margin-top: 1em;
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 0.8em;
+}
