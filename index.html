@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,20 +14,35 @@
     </header>
     <main>
         <div id="timer">
-            <span id="minutes">25</span>:<span id="seconds">00</span>
+            <canvas id="timer-canvas" width="200" height="200"></canvas>
+            <div id="time-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
         </div>
         <div id="controls">
-            <button id="start">Start</button>
+            <button id="start">Start Work</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
+            <button id="start-break">Start Break</button>
         </div>
         <div id="settings">
-            <button id="settings-button">Settings</button>
+            <div class="input-group">
+                <label for="work-duration">Work Duration (minutes):</label>
+                <input type="number" id="work-duration" value="25" min="1" max="60">
+            </div>
+            <div class="input-group">
+                <label for="break-duration">Break Duration (minutes):</label>
+                <input type="number" id="break-duration" value="5" min="1" max="30">
+            </div>
+            <button id="save-settings">Save Settings</button>
         </div>
     </main>
     <footer>
-        <p>Pomodoro Timer by [Your Name]</p>
+        <p>Pomodoro Timer by MERON WOLDESENBET</p>
     </footer>
+    <img id="hello-kitty" src="https://i.pinimg.com/originals/c5/24/8e/c5248ed334ed6965c2167910024da02d.gif">
+    <audio id="start-sound" src="start.mp3"></audio>
+    <audio id="end-sound" src="end.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
